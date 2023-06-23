@@ -21,7 +21,7 @@
    ```python
    source_folder = "path/to/source/folder"
    destination_folder = "path/to/destination/folder"
-   n = 100
+   n = 1000
    ```
 
 4. 打开终端或命令提示符，导航到存储脚本的目录。
