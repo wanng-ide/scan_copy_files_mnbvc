@@ -16,10 +16,10 @@
 
 ## 使用方法
 
-你可以通过命令行参数来运行此程序，以下是一个示例：
+你可以通过命令行参数来运行此程序（也可以参考`run.sh`），以下是一个示例：
 
 ```shell
-python script_name.py --source_folder /path/to/source --destination_folder /path/to/destination --n 100 --file_types pdf doc png
+python scan_copy_files.py --source_folder /path/to/source --destination_folder /path/to/destination --n 100 --file_types pdf doc png
 ```
 
 - `script_name.py`：Python脚本的文件名。
