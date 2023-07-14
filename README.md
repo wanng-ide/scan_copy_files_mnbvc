@@ -16,25 +16,21 @@
 
 ## 使用方法
 
-你可以通过命令行参数来运行此程序（也可以参考`run.sh`），以下是一个示例：
+你可以通过命令行参数来运行此程序，以下是一个示例：
 
 ```shell
-python scan_copy_files.py --source_folder /path/to/source --destination_folder /path/to/destination --n 100 --file_types pdf doc png
+python scan_copy_files.py --source_folder /path/to/source --destination_folder /path/to/destination --n 100 --keywords .pdf .doc .png
 ```
 
 - `--source_folder`：源文件夹的路径。
 - `--destination_folder`：目标文件夹的路径。
 - `--n`：需要复制的文件数量。
-- `--file_types`：需要复制的文件类型，可以是一个或多个。（比如，pdf）
+- `--keywords`：需要复制的文件，文件名中需要包含的关键词，可以是一个或多个。（比如，.pdf）
 
 ## 注意事项
 
 1. 源文件夹和目标文件夹的路径应该是完整的文件系统路径。如果目标文件夹不存在，程序将会自动创建。
 
-2. 文件类型必须是文件的扩展名，例如：对于PDF文件，文件类型是'pdf'；对于PNG图像，文件类型是'png'。
+2. 如果源文件夹（包括其子文件夹）中的文件数量少于你指定的文件数量，程序将会打印一条错误信息，并不会复制任何文件。
 
-3. 如果源文件夹（包括其子文件夹）中的文件数量少于你指定的文件数量，程序将会打印一条错误信息，并不会复制任何文件。
-
-4. 如果源文件夹和目标文件夹是同一个文件夹，或者目标文件夹是源文件夹的子文件夹，可能会导致未预期的结果。
-
-欢迎在GitHub上提出问题和建议，也欢迎提出pull请求。
+3. 如果源文件夹和目标文件夹是同一个文件夹，或者目标文件夹是源文件夹的子文件夹，可能会导致未预期的结果。
