@@ -22,7 +22,6 @@
 python scan_copy_files.py --source_folder /path/to/source --destination_folder /path/to/destination --n 100 --file_types pdf doc png
 ```
 
-- `script_name.py`：Python脚本的文件名。
 - `--source_folder`：源文件夹的路径。
 - `--destination_folder`：目标文件夹的路径。
 - `--n`：需要复制的文件数量。
